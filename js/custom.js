@@ -37,9 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
   /* END HEADER MENU CURRENT PAGE ACTIVE LINK CODE */
 
   // START FIXED HEADER ON SCROLL OR REFRESH
+
   function handleFixedHeader() {
     var scroll = window.scrollY;
     const header = document.querySelector("header");
+
+    if (!header) return; // ✅ Prevent error if header is null
 
     if (scroll >= 140) {
       header.classList.add("fixed");
@@ -53,13 +56,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Run on page load
   window.addEventListener("load", handleFixedHeader);
-  // OR you can directly call once also: handleFixedHeader();
 
   // START HEADER HIDE/SHOW ON SCROLL
   (function () {
     var lastScrollTop = 0,
       delta = 15;
     var header = document.querySelector("header");
+
+    if (!header) return; // ✅ Skip if header is not present
 
     window.addEventListener("scroll", function () {
       var st = window.scrollY;
