@@ -326,6 +326,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* START TESTIMONIAL SLIDER DESIGN */
 var swiper2 = new Swiper(".testimonialSwiper", {
+  slidesPerView: 3,
+  centeredSlides: true,
+  loop: true,
+  spaceBetween: 24,
+  grabCursor: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".swiper-button-next2",
     prevEl: ".swiper-button-prev2",
@@ -334,6 +343,16 @@ var swiper2 = new Swiper(".testimonialSwiper", {
     el: ".swiper-pagination",
     clickable: true,
     dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+    },
   },
 });
 /* END TESTIMONIAL SLIDER DESIGN */

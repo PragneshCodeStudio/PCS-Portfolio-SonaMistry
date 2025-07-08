@@ -42,10 +42,6 @@
         font-size: 14px;
     }
 
-    .swiper-slider-wrapper {
-        max-width: 88%;
-        margin-inline: auto;
-    }
 
     div.fancybox-slide--image {
         padding: calc(var(--sec_space) * 2);
@@ -63,17 +59,6 @@
         padding-inline: 16px;
     }
 
-    .user-details-wrapper .sm-user-msg {
-        font-size: 22px;
-    }
-
-    .sm-testimonial-name {
-        font-size: 24px;
-    }
-
-    .sm-testimonial-position {
-        font-size: 18px;
-    }
 
     .main-wrapper .h1 {
         font-size: 64px;
@@ -144,10 +129,6 @@
 
     .sm-choose-card-list .sm-choose-item {
         padding: 16px;
-    }
-
-    .user-details-wrapper .sm-user-msg {
-        font-size: 20px;
     }
 
     .sm-contactUs-sec .sm-form-col {
@@ -332,24 +313,6 @@
         font-size: 16px;
     }
 
-    .swiper-slider-wrapper {
-        max-width: 96%;
-    }
-
-    .sm-testimonial-content .user-details-wrapper {
-        padding: 24px;
-        max-width: 65%;
-    }
-
-    .sm-testimonial-content .sm-img-wrapper {
-        max-width: 35%;
-    }
-
-    .user-details-wrapper .sm-user-msg::before {
-        top: -15px;
-        left: -8px;
-    }
-
     .sm-contactUs-sec .sm-info-col {
         max-width: 298px;
     }
@@ -416,11 +379,6 @@
 @media screen and (max-width: 991px) {
     .sm-choose-card-list .sm-choose-card {
         flex-basis: 50%;
-    }
-
-    .user-details-wrapper .sm-user-msg {
-        font-size: 16px;
-        margin-bottom: 40px;
     }
 
     .input-field textarea {
@@ -597,38 +555,12 @@
         grid-auto-rows: 100px;
     }
 
-    .sm-testimonial-content {
-        flex-wrap: wrap;
-    }
-
-    .sm-testimonial-content .sm-img-wrapper {
-        max-width: 100%;
-    }
-
-    .sm-testimonial-content .user-details-wrapper {
-        padding: 32px 16px;
-        max-width: 100%;
-    }
-
     .sm-testimonial-content .sm-img-wrapper .sm-img-wrap {
         padding-top: 100%;
     }
 
     .user-details-wrapper .sm-user-msg {
         font-size: 14px;
-        margin-bottom: 32px;
-    }
-
-    .user-details-wrapper .sm-user-msg::before {
-        top: -21px;
-        left: -4px;
-        width: 56px;
-        height: 56px;
-    }
-
-    .sm-testimonial-content .user-details-wrapper {
-        background-position: center calc(100% - -2px);
-        background-size: 48px;
     }
 
     .testimonial-slider-wrapper .swiper-pagination {
